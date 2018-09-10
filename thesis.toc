@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
+\contentsline {chapter}{\numberline {2}End-To-End Representation Learning}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Domain Adaptation and Zero-Shot Learning}{7}{section.2.1}
+\contentsline {chapter}{\numberline {3}Related Work}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Structured Prediction with Constraints}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Semi-Supervised Methods for Parsing}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Structural Properties of Dependency Structures}{12}{section.3.3}
+\contentsline {chapter}{\numberline {4}Deep K-Means++ Learning}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Our Algorithm}{13}{section.4.1}
+\contentsline {subsubsection}{Sub-Problem Gradients}{15}{section*.4}
+\contentsline {section}{\numberline {4.2}Differentiable K-Means Clustering}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The K-Means Objective}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Differentiable K-Means Iterations}{17}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Differentiable Centroid Sampling}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Gumbel-Softmax Sampling}{21}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Experiments}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Experiments with synthetic data}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Learning a linear projection}{23}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Experiments With Real-World Data}{25}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Datasets}{25}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Experimental Protocol}{25}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Implementation Details}{25}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Results}{25}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}General Details}{25}{subsection.5.2.5}
+\contentsline {subsubsection}{Depth of K-Means unrolling}{26}{section*.5}
+\contentsline {subsubsection}{Embedding Function}{26}{section*.6}
+\contentsline {subsubsection}{Training Details}{26}{section*.7}
+\contentsline {subsubsection}{Testing Details}{27}{section*.8}
+\contentsline {subsection}{\numberline {5.2.6}CUB Dataset}{28}{subsection.5.2.6}
+\contentsline {subsubsection}{Training Details}{28}{section*.9}
+\contentsline {subsubsection}{Results}{28}{section*.10}
+\contentsline {subsection}{\numberline {5.2.7}Stanford Cars Dataset}{29}{subsection.5.2.7}
+\contentsline {subsubsection}{Training Details}{29}{section*.11}
+\contentsline {subsubsection}{Results}{29}{section*.12}
+\contentsline {subsection}{\numberline {5.2.8}Ablation Studies}{29}{subsection.5.2.8}
+\contentsline {chapter}{\numberline {6}Discussion}{31}{chapter.6}

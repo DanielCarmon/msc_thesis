@@ -1,0 +1,213 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{GRWC09}
+
+\bibitem[BM98]{blum_combining_1998}
+Avrim Blum and Tom Mitchell.
+\newblock Combining {Labeled} and {Unlabeled} {Data} with {Co}-training.
+\newblock In {\em Proceedings of the {Eleventh} {Annual} {Conference} on
+  {Computational} {Learning} {Theory}}, {COLT}' 98, pages 92--100, New York,
+  NY, USA, 1998. ACM.
+
+\bibitem[Cov01]{covington_fundamental_2001}
+Michael~A. Covington.
+\newblock A fundamental algorithm for dependency parsing.
+\newblock In {\em Proceedings of the 39th annual {ACM} southeast conference},
+  pages 95--102. Citeseer, 2001.
+
+\bibitem[CRR07]{chang_guiding_2007}
+Ming-Wei Chang, Lev Ratinov, and Dan Roth.
+\newblock Guiding semi-supervision with constraint-driven learning.
+\newblock In {\em Proceedings of the 45th annual meeting of the association of
+  computational linguistics}, pages 280--287, 2007.
+
+\bibitem[CRRR08]{chang_learning_2008}
+Ming-Wei Chang, Lev-Arie Ratinov, Nicholas Rizzolo, and Dan Roth.
+\newblock Learning and {Inference} with {Constraints}.
+\newblock In {\em {AAAI}}, pages 1513--1518, 2008.
+
+\bibitem[CZZ13]{chen_semi-supervised_2013}
+Wenliang Chen, Min Zhang, and Yue Zhang.
+\newblock Semi-supervised feature transformation for dependency parsing.
+\newblock In {\em Proceedings of the 2013 {Conference} on {Empirical} {Methods}
+  in {Natural} {Language} {Processing}}, pages 1303--1313, 2013.
+
+\bibitem[GDS07]{gupta_efficient_2007}
+Rahul Gupta, Ajit~A. Diwan, and Sunita Sarawagi.
+\newblock Efficient inference with cardinality-based clique potentials.
+\newblock In {\em In {ICML}}, pages 329--336, 2007.
+
+\bibitem[GGT10]{ganchev_posterior_2010}
+Kuzman Ganchev, Jennifer Gillenwater, and Ben Taskar.
+\newblock Posterior regularization for structured latent variable models.
+\newblock {\em Journal of Machine Learning Research}, 11(Jul):2001--2049, 2010.
+
+\bibitem[GRN10]{gomez-rodriguez_transition-based_2010}
+Carlos Gómez-Rodríguez and Joakim Nivre.
+\newblock A transition-based parser for 2-planar dependency structures.
+\newblock In {\em Proceedings of the 48th {Annual} {Meeting} of the
+  {Association} for {Computational} {Linguistics}}, pages 1492--1501.
+  Association for Computational Linguistics, 2010.
+
+\bibitem[GRWC09]{gomez-rodriguez_parsing_2009}
+Carlos Gómez-Rodríguez, David Weir, and John Carroll.
+\newblock Parsing mildly non-projective dependency structures.
+\newblock In {\em Proceedings of the 12th {Conference} of the {European}
+  {Chapter} of the {Association} for {Computational} {Linguistics}}, pages
+  291--299. Association for Computational Linguistics, 2009.
+
+\bibitem[Hav07a]{havelka_beyond_2007}
+Jiri Havelka.
+\newblock Beyond projectivity: {Multilingual} evaluation of constraints and
+  measures on non-projective structures.
+\newblock In {\em Proceedings of the 45th {Annual} {Meeting} of the
+  {Association} of {Computational} {Linguistics}}, pages 608--615, 2007.
+
+\bibitem[Hav07b]{havelka_projectivity_2007}
+Jirí Havelka.
+\newblock Projectivity in {Totally} {Ordered} {Rooted} {Trees}: {An}
+  {Alternative} {Definition} of {Projectivity} and {Optimal} {Algorithms} for
+  {Detecting} {Non}-{Projective} {Edges} and {Projectivizing} {Totally}
+  {Ordered} {Rooted} {Trees}.
+\newblock 2007.
+
+\bibitem[KCC08]{koo_simple_2008}
+Terry Koo, Xavier Carreras, and Michael Collins.
+\newblock Simple semi-supervised dependency parsing.
+\newblock {\em Proceedings of ACL-08: HLT}, pages 595--603, 2008.
+
+\bibitem[KG15]{kiperwasser_semi-supervised_2015}
+Eliyahu Kiperwasser and Yoav Goldberg.
+\newblock Semi-supervised dependency parsing using bilexical contextual
+  features from auto-parsed data.
+\newblock In {\em Proceedings of the 2015 {Conference} on {Empirical} {Methods}
+  in {Natural} {Language} {Processing}}, pages 1348--1353, 2015.
+
+\bibitem[KG16]{kiperwasser_simple_2016}
+Eliyahu Kiperwasser and Yoav Goldberg.
+\newblock Simple and accurate dependency parsing using bidirectional {LSTM}
+  feature representations.
+\newblock {\em arXiv preprint arXiv:1603.04351}, 2016.
+
+\bibitem[Kuh10]{kuhlmann_dependency_2010}
+Marco Kuhlmann, editor.
+\newblock {\em Dependency {Structures} and {Lexicalized} {Grammars}: {An}
+  {Algebraic} {Approach}}.
+\newblock Lecture {Notes} in {Artificial} {Intelligence}. Springer-Verlag,
+  Berlin Heidelberg, 2010.
+
+\bibitem[LZ14]{li_high_2014}
+Yujia Li and Rich Zemel.
+\newblock High order regularization for semi-supervised learning of structured
+  output problems.
+\newblock In {\em International {Conference} on {Machine} {Learning}}, pages
+  1368--1376, 2014.
+
+\bibitem[LZZ{\etalchar{+}}16]{li_active_2016}
+Zhenghua Li, Min Zhang, Yue Zhang, Zhanyi Liu, Wenliang Chen, Hua Wu, and
+  Haifeng Wang.
+\newblock Active learning for dependency parsing with partial annotation.
+\newblock In {\em Proceedings of the 54th {Annual} {Meeting} of the
+  {Association} for {Computational} {Linguistics} ({Volume} 1: {Long}
+  {Papers})}, volume~1, pages 344--354, 2016.
+
+\bibitem[MCJ06a]{mcclosky_effective_2006}
+David McClosky, Eugene Charniak, and Mark Johnson.
+\newblock Effective {Self}-training for {Parsing}.
+\newblock In {\em Proceedings of the {Main} {Conference} on {Human} {Language}
+  {Technology} {Conference} of the {North} {American} {Chapter} of the
+  {Association} of {Computational} {Linguistics}}, {HLT}-{NAACL} '06, pages
+  152--159, Stroudsburg, PA, USA, 2006. Association for Computational
+  Linguistics.
+
+\bibitem[MCJ06b]{mcclosky_reranking_2006}
+David McClosky, Eugene Charniak, and Mark Johnson.
+\newblock Reranking and self-training for parser adaptation.
+\newblock In {\em Proceedings of the 21st {International} {Conference} on
+  {Computational} {Linguistics} and the 44th annual meeting of the
+  {Association} for {Computational} {Linguistics}}, pages 337--344. Association
+  for Computational Linguistics, 2006.
+
+\bibitem[MPRH05]{mcdonald_non-projective_2005}
+Ryan McDonald, Fernando Pereira, Kiril Ribarov, and Jan Hajič.
+\newblock Non-projective dependency parsing using spanning tree algorithms.
+\newblock In {\em Proceedings of the conference on {Human} {Language}
+  {Technology} and {Empirical} {Methods} in {Natural} {Language} {Processing}},
+  pages 523--530. Association for Computational Linguistics, 2005.
+
+\bibitem[Niv03]{nivre_efficient_2003}
+Joakim Nivre.
+\newblock An {Efficient} {Algorithm} for {Projective} {Dependency} {Parsing}.
+\newblock In {\em Proceedings of the 8th {International} {Workshop} on
+  {Parsing} {Technologies} ({IWPT}}, pages 149--160, 2003.
+
+\bibitem[Niv06]{nivre_constraints_2006}
+Joakim Nivre.
+\newblock Constraints on non-projective dependency parsing.
+\newblock In {\em 11th {Conference} of the {European} {Chapter} of the
+  {Association} for {Computational} {Linguistics}}, 2006.
+
+\bibitem[Niv09]{nivre_non-projective_2009}
+Joakim Nivre.
+\newblock Non-projective dependency parsing in expected linear time.
+\newblock In {\em Proceedings of the {Joint} {Conference} of the 47th {Annual}
+  {Meeting} of the {ACL} and the 4th {International} {Joint} {Conference} on
+  {Natural} {Language} {Processing} of the {AFNLP}: {Volume} 1-{Volume} 1},
+  pages 351--359. Association for Computational Linguistics, 2009.
+
+\bibitem[NN05]{nivre_pseudo-projective_2005}
+Joakim Nivre and Jens Nilsson.
+\newblock Pseudo-projective {Dependency} {Parsing}.
+\newblock In {\em Proceedings of the 43rd {Annual} {Meeting} on {Association}
+  for {Computational} {Linguistics}}, {ACL} '05, pages 99--106, Stroudsburg,
+  PA, USA, 2005. Association for Computational Linguistics.
+
+\bibitem[RSS{\etalchar{+}}]{ren_structured_nodate}
+Hongyu Ren, Russell Stewart, Jiaming Song, Volodymyr Kuleshov, and Stefano
+  Ermon.
+\newblock Structured {Prediction} with {Adversarial} {Constraint} {Learning}.
+\newblock {\em 31st Conference on Neural Information Processing Systems (NIPS
+  2017), Long Beach, CA, USA.}
+
+\bibitem[SICC09]{suzuki_empirical_2009}
+Jun Suzuki, Hideki Isozaki, Xavier Carreras, and Michael Collins.
+\newblock An empirical study of semi-supervised structured conditional models
+  for dependency parsing.
+\newblock In {\em Proceedings of the 2009 {Conference} on {Empirical} {Methods}
+  in {Natural} {Language} {Processing}: {Volume} 2-{Volume} 2}, pages 551--560.
+  Association for Computational Linguistics, 2009.
+
+\bibitem[SR10]{sogaard_semi-supervised_2010}
+Anders Søgaard and Christian Rishøj.
+\newblock Semi-supervised dependency parsing using generalized tri-training.
+\newblock In {\em Proceedings of the 23rd {International} {Conference} on
+  {Computational} {Linguistics}}, pages 1065--1073. Association for
+  Computational Linguistics, 2010.
+
+\bibitem[TSZ{\etalchar{+}}12]{tarlow_fast_2012}
+Daniel Tarlow, Kevin Swersky, Richard~S. Zemel, Ryan~P. Adams, and Brendan~J.
+  Frey.
+\newblock Fast {Exact} {Inference} for {Recursive} {Cardinality} {Models}.
+\newblock In {\em Proceedings of the {Twenty}-{Eighth} {Conference} on
+  {Uncertainty} in {Artificial} {Intelligence}}, {UAI}'12, pages 825--834,
+  Arlington, Virginia, United States, 2012. AUAI Press.
+
+\bibitem[YB15]{yu_exploring_2015}
+Juntao Yu and Bernd Bohnet.
+\newblock Exploring {Confidence}-based {Self}-training for {Multilingual}
+  {Dependency} {Parsing} in an {Under}-{Resourced} {Language} {Scenario}.
+\newblock In {\em Proceedings of the {Third} {International} {Conference} on
+  {Dependency} {Linguistics} ({Depling} 2015)}, pages 350--358, 2015.
+
+\bibitem[YEB15]{yu_domain_2015}
+Juntao Yu, Mohab Elkaref, and Bernd Bohnet.
+\newblock Domain adaptation for dependency parsing via self-training.
+\newblock In {\em Proceedings of the 14th {International} {Conference} on
+  {Parsing} {Technologies}}, pages 1--10, 2015.
+
+\bibitem[ZCL16]{zhang_dependency_2016}
+Xingxing Zhang, Jianpeng Cheng, and Mirella Lapata.
+\newblock Dependency {Parsing} as {Head} {Selection}.
+\newblock {\em arXiv:1606.01280 [cs]}, June 2016.
+\newblock arXiv: 1606.01280.
+
+\end{thebibliography}

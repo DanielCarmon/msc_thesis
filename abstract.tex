@@ -1,0 +1,7 @@
+Cluster Analysis is the important and well-studied problem of finding grouping patterns in data, and has found vast applications across many fields of science.
+Most existing clustering algorithms rely on data to be represented as points in $\mathbb{R}^n$, and their output is only of interest if geometric distance between these points sufficiently corresponds to the similarity notion of interest.
+For most real-world data, and in particular for images, such a correspondence generally does not hold. There is thus interest in algorithms for learning a data representation such that high-level similarity notion of interest between data points can be encoded as geometric distances, and thus can be easily read-out.
+
+We present an algorithm to achieve this goal, by composing a differentiable formulations of the K-Means++  algorithm on top of a Deep Neural Network which operates as an embedding module. By end-to-end differentiation of this pipeline, we can train the network's parameters to learn an embedding such that relevant data semantics are easily read-out, and can thus be employed by downstream clustering procedures.
+
+We empirically demonstrate that this straightforward method reaches state-of-the-art/competitive performance on several real-world image analysis benchmarks, in which the representation learned from the set of examples generalizes successfully to find meaningful clusters in data from different image categories. 

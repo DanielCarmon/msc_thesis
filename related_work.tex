@@ -1,0 +1,44 @@
+\chapter{Related Work} 
+\label{chap:Related_Work}
+
+\section{Structured Prediction with Constraints}
+\label{struct_pred_constraint}
+Many real world tasks involve outputting multiple interdependent variables. \textit{Structured prediction} aims at learning models for such problems. Due to the exponential size of the output space of such problems, it is often the case that some structures are more probable than others. Specifically, there are cases where some of the outputs are not valid. Such  restrictions are considered \textit{hard constraints}. We can also consider \textit{soft constraints}, for cases in which a family of structures is rare. As discussed in Chapter \ref{injection}, a first approach for leveraging these constraints, is  considering these constraints at inference time. For hard constraints, a reasonable approach would be outputting only valid structures, namely presenting inference as a constrained combinatorial optimization problem. This is done successfully for dependency parsing, where structures are enforced to be directed trees (e.g. in \cite{mcdonald_non-projective_2005}). Soft constraints can be tackled in a similar constrained fashion, e.g. in projective dependency parsing \cite{zhang_dependency_2016} (where not necessarily all trees are indeed projective). Instead of constrained optimization, inference can be seen as a tradeoff between local potentials and global ones (corresponding to the structural constraints). This is common for cardinality constraints \cite{gupta_efficient_2007, tarlow_fast_2012}. 
+
+CCM \cite{chang_learning_2008} is a generic framework for injecting structural knowledge at inference time. CoDL \cite{chang_guiding_2007} extends CCMs by incorporating the constraints in the learning process with a bootstrapping-like process, such that unlabeled data is given labels by the (soft or hard) constrained inference. 
+
+The method which is most related to ours is Posterior Regularization \cite{ganchev_posterior_2010}. The idea of PR is to regularize the posterior distributions so that they are consistent with some prior knowledge. Model parameters $\mathbf{\theta}$ and auxiliary label distributions $\mathbf{q}$ are learned jointly using EM approach, to both fit the labeled data and minimize the KL divergence between $\mathbf{q}$ and $p_\theta(\by|\bx)$. Each step  in their learning algorithm then involves solving an inner optimization problem\footnote{over either $\mathbf{\theta}$ or $\mathbf{q}$}. Note that in our method, such auxiliary distributions are not necessary. 
+
+High-Order Regularization \cite{li_high_2014} is a max-margin framework for constraints injection. They introduce a regularizer function $R$. However, contrary to our approach, it is applied on discrete structures. Their learning process then involves both finding structures with low $R$ value and minimizing the difference between the score of the maximal-scored structures to theirs. This is done by alternating methods.
+
+Note that all above methods require solving combinatorial optimization problems (for finding structures or label distributions), whereas our method directly minimizes a continuous function over the model's scores.
+
+Recently, \cite{ren_structured_nodate} proposed extracting automatically structural constraints from labeled data using an adversary, learning to discriminate true labels from predicted ones.
+
+\section{Semi-Supervised Methods for  Parsing}
+
+We now give a brief overview of semi-supervised methods designed specifically for parsing tasks.
+
+The most familiar algorithm for semi-supervised learning (SSL) is \textit{self-training}. The key idea is to start with a small seed of labeled examples, and augment it with new predicted ones. Once the dataset is augmented, a new model is learned from  scratch on the concatenated dataset. This direction was exhaustively researched for SSL of dependency parsing. \cite{mcclosky_effective_2006,mcclosky_reranking_2006} demonstrated that self-training can boost (constituent) parsing performance for in-domain and out-of-domain scenarios, when a reranker is incorporated. \cite{yu_domain_2015,yu_exploring_2015} are able to improve dependency parsers  for domain adaptation and multilingual scenarios through confidence-based methods.
+
+Co-training \cite{blum_combining_1998} is another way to train models using both labeled and unlabeled data. It requires multiple learners, each with a different view of the data. When one learner is confident of a prediction, other learners' training data is augmented with the prediction. \cite{sogaard_semi-supervised_2010} offered a similar method, stacking 3 dependency parsers and augmenting training data when two of them agree on a prediction for an unlabeled example. 
+
+Until recently, dependency parsers were often linear models over hand-crafted features. Engineering these features drew a lot of research attention. Some works considered SSL of such models by incorporating features based on unlabeled data. \cite{koo_simple_2008} offered features that are based on word clusters. \cite{kiperwasser_semi-supervised_2015} suggested using lexical statistics derived from unlabeled data, parsed by a different baseline model. Additional features were presented by \cite{suzuki_empirical_2009,chen_semi-supervised_2013}. Note that these methods have become less relevant due to deep learning methods, which learn features of the data automatically\footnote{Although one may consider combining such features with a deep model}.
+
+Active Learning was also considered for parsing \cite{li_active_2016}. At each iteration, they select a few most uncertain words and manually annotate their heads. These partial annotations are then added to the training data. The intuition behind is clear: adding quality data where the parser has most difficulty. 
+
+
+\section{Structural Properties of Dependency Structures}\label{sec:structural_props_parse}
+
+Structural properties of dependency structures were the focus of many works. The main idea is to design parsers which are on one hand expressive enough, but not too expressive on the other\footnote{In the sense that a structure can be obtained by this model if and only if it is "valid"}.
+
+As discussed previously, \textit{single-head} and \textit{acyclicity} are well-known and considered hard constraints in most scenarios. 
+
+\textit{Projectivity}\footnote{See formal definition  in Section \ref{section:projectivity}} is also among the most studied restrictions on parse trees. However, frequency of non-projective structures varies between languages, and even between different domains of the same language. Thus, several relaxations to projectivity were examined. These include \textit{planarity}, \textit{well-nestedness}, and \textit{gap-degree}, which are formalized and analyzed in \cite{gomez-rodriguez_transition-based_2010,gomez-rodriguez_parsing_2009,havelka_beyond_2007,havelka_projectivity_2007,kuhlmann_dependency_2010}.
+
+Many parsers are constrained to output projective trees, both in transition-based \cite{nivre_efficient_2003,covington_fundamental_2001} and graph-based \cite{zhang_dependency_2016,kiperwasser_simple_2016} parsers. Non-projective parsing is also well-understood for both approaches \cite{nivre_non-projective_2009,mcdonald_non-projective_2005}. Relaxations of projectivity were addressed mainly in TB parsers \cite{nivre_pseudo-projective_2005,nivre_constraints_2006,gomez-rodriguez_transition-based_2010,gomez-rodriguez_parsing_2009}.
+
+%Explain the structural properties of parse outputs (trees, projectivity, other properties)
+
+%\cite{kuhlmann_dependency_2010,havelka_projectivity_2007,havelka_beyond_2007,nivre_constraints_2006,gomez-rodriguez_transition-based_2010,nivre_non-projective_2009,gomez-rodriguez_parsing_2009}
+

@@ -1,0 +1,945 @@
+
+@inproceedings{suzuki_empirical_2009,
+	title = {An empirical study of semi-supervised structured conditional models for dependency parsing},
+	booktitle = {Proceedings of the 2009 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}: {Volume} 2-{Volume} 2},
+	publisher = {Association for Computational Linguistics},
+	author = {Suzuki, Jun and Isozaki, Hideki and Carreras, Xavier and Collins, Michael},
+	year = {2009},
+	pages = {551--560}
+}
+
+@inproceedings{blum_combining_1998,
+	address = {New York, NY, USA},
+	series = {{COLT}' 98},
+	title = {Combining {Labeled} and {Unlabeled} {Data} with {Co}-training},
+	isbn = {978-1-58113-057-7},
+	url = {http://doi.acm.org/10.1145/279943.279962},
+	doi = {10.1145/279943.279962},
+	urldate = {2018-03-18TZ},
+	booktitle = {Proceedings of the {Eleventh} {Annual} {Conference} on {Computational} {Learning} {Theory}},
+	publisher = {ACM},
+	author = {Blum, Avrim and Mitchell, Tom},
+	year = {1998},
+	pages = {92--100}
+}
+
+@inproceedings{mcclosky_effective_2006,
+	address = {Stroudsburg, PA, USA},
+	series = {{HLT}-{NAACL} '06},
+	title = {Effective {Self}-training for {Parsing}},
+	url = {https://doi.org/10.3115/1220835.1220855},
+	doi = {10.3115/1220835.1220855},
+	abstract = {We present a simple, but surprisingly effective, method of self-training a two-phase parser-reranker system using readily available unlabeled data. We show that this type of bootstrapping is possible for parsing when the bootstrapped parses are processed by a discriminative reranker. Our improved model achieves an f-score of 92.1\%, an absolute 1.1\% improvement (12\% error reduction) over the previous best result for Wall Street Journal parsing. Finally, we provide some analysis to better understand the phenomenon.},
+	urldate = {2018-03-18TZ},
+	booktitle = {Proceedings of the {Main} {Conference} on {Human} {Language} {Technology} {Conference} of the {North} {American} {Chapter} of the {Association} of {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {McClosky, David and Charniak, Eugene and Johnson, Mark},
+	year = {2006},
+	pages = {152--159}
+}
+
+@inproceedings{gupta_efficient_2007,
+	title = {Efficient inference with cardinality-based clique potentials},
+	abstract = {Many collective labeling tasks require inference on graphical models where the clique potentials depend only on the number of nodes that get a particular label. We design efficient inference algorithms for various families of such potentials. Our algorithms are exact for arbitrary cardinality-based clique potentials on binary labels and for max-like and majority-like clique potentials on multiple labels. Moving towards more complex potentials, we show that inference becomes NPhard even on cliques with homogeneous Potts potentials. We present a 13 15-approximation algorithm with runtime sub-quadratic in the clique size. In contrast, the best known previous guarantee for graphs with Potts potentials is only 0.5. We perform empirical comparisons on real and synthetic data, and show that our proposed methods are an order of magnitude faster than the well-known Tree-based re-parameterization (TRW) and graph-cut algorithms. 1.},
+	booktitle = {In {ICML}},
+	author = {Gupta, Rahul and Diwan, Ajit A. and Sarawagi, Sunita},
+	year = {2007},
+	pages = {329--336}
+}
+
+@inproceedings{tarlow_fast_2012,
+	address = {Arlington, Virginia, United States},
+	series = {{UAI}'12},
+	title = {Fast {Exact} {Inference} for {Recursive} {Cardinality} {Models}},
+	isbn = {978-0-9749039-8-9},
+	url = {http://dl.acm.org/citation.cfm?id=3020652.3020738},
+	abstract = {Cardinality potentials are a generally useful class of high order potential that affect probabilities based on how many of D binary variables are active. Maximum a posteriori (MAP) inference for cardinality potential models is well-understood, with efficient computations taking O(D log D) time. Yet efficient marginalization and sampling have not been addressed as thoroughly in the machine learning community. We show that there exists a simple algorithm for computing marginal probabilities and drawing exact joint samples that runs in O(D log2 D) time, and we show how to frame the algorithm as efficient belief propagation in a low order tree-structured model that includes additional auxiliary variables. We then develop a new, more general class of models, termed Recursive Cardinality models, which take advantage of this efficiency. Finally, we show how to do efficient exact inference in models composed of a tree structure and a cardinality potential. We explore the expressive power of Recursive Cardinality models and empirically demonstrate their utility.},
+	urldate = {2018-03-17TZ},
+	booktitle = {Proceedings of the {Twenty}-{Eighth} {Conference} on {Uncertainty} in {Artificial} {Intelligence}},
+	publisher = {AUAI Press},
+	author = {Tarlow, Daniel and Swersky, Kevin and Zemel, Richard S. and Adams, Ryan P. and Frey, Brendan J.},
+	year = {2012},
+	pages = {825--834}
+}
+
+@inproceedings{pei_effective_2015,
+	title = {An effective neural network model for graph-based dependency parsing},
+	volume = {1},
+	booktitle = {Proceedings of the 53rd {Annual} {Meeting} of the {Association} for {Computational} {Linguistics} and the 7th {International} {Joint} {Conference} on {Natural} {Language} {Processing} ({Volume} 1: {Long} {Papers})},
+	author = {Pei, Wenzhe and Ge, Tao and Chang, Baobao},
+	year = {2015},
+	pages = {313--322}
+}
+
+@book{goldberg_neural_2017,
+	address = {San Rafael},
+	title = {Neural {Network} {Methods} in {Natural} {Language} {Processing}},
+	isbn = {978-1-62705-298-6},
+	abstract = {Neural networks are a family of powerful machine learning models. This book focuses on the application of neural network models to natural language data. The first half of the book (Parts I and II) covers the basics of supervised machine learning and feed-forward neural networks, the basics of working with machine learning over language data, and the use of vector-based rather than symbolic representations for words. It also covers the computation-graph abstraction, which allows to easily define and train arbitrary neural networks, and is the basis behind the design of contemporary neural network software libraries. The second part of the book (Parts III and IV) introduces more specialized neural network architectures, including 1D convolutional neural networks, recurrent neural networks, conditioned-generation models, and attention-based models. These architectures and techniques are the driving force behind state-of-the-art algorithms for machine translation, syntactic parsing, and many other applications. Finally, we also discuss tree-shaped networks, structured prediction, and the prospects of multi-task learning.},
+	language = {English},
+	publisher = {Morgan \& Claypool Publishers},
+	author = {Goldberg, Yoav},
+	editor = {Hirst, Graeme},
+	month = apr,
+	year = {2017}
+}
+
+@article{hinton_deep_2012,
+	title = {Deep {Neural} {Networks} for {Acoustic} {Modeling} in {Speech} {Recognition}: {The} {Shared} {Views} of {Four} {Research} {Groups}},
+	volume = {29},
+	issn = {1053-5888},
+	shorttitle = {Deep {Neural} {Networks} for {Acoustic} {Modeling} in {Speech} {Recognition}},
+	doi = {10.1109/MSP.2012.2205597},
+	abstract = {Most current speech recognition systems use hidden Markov models (HMMs) to deal with the temporal variability of speech and Gaussian mixture models (GMMs) to determine how well each state of each HMM fits a frame or a short window of frames of coefficients that represents the acoustic input. An alternative way to evaluate the fit is to use a feed-forward neural network that takes several frames of coefficients as input and produces posterior probabilities over HMM states as output. Deep neural networks (DNNs) that have many hidden layers and are trained using new methods have been shown to outperform GMMs on a variety of speech recognition benchmarks, sometimes by a large margin. This article provides an overview of this progress and represents the shared views of four research groups that have had recent successes in using DNNs for acoustic modeling in speech recognition.},
+	number = {6},
+	journal = {IEEE Signal Processing Magazine},
+	author = {Hinton, G. and Deng, L. and Yu, D. and Dahl, G. E. and Mohamed, A. r and Jaitly, N. and Senior, A. and Vanhoucke, V. and Nguyen, P. and Sainath, T. N. and Kingsbury, B.},
+	month = nov,
+	year = {2012},
+	keywords = {Acoustics, Automatic speech recognition, Data models, Gaussian mixture models, Gaussian processes, HMM states, Hidden Markov models, Neural networks, Speech recognition, Training, acoustic modeling, deep neural networks, feed-forward neural network, feedforward neural nets, hidden Markov models, posterior probabilities, speech recognition, temporal variability},
+	pages = {82--97}
+}
+
+@article{counterclockwise_deep_nodate,
+	title = {Deep {Neural} {Networks} for {Acoustic} {Modeling}},
+	author = {Counterclockwise, Rotate Clockwise Rotate}
+}
+
+@book{nivre_inductive_2006,
+	address = {Secaucus, NJ, USA},
+	title = {Inductive {Dependency} {Parsing} ({Text}, {Speech} and {Language} {Technology})},
+	isbn = {978-1-4020-4888-3},
+	publisher = {Springer-Verlag New York, Inc.},
+	author = {Nivre, Joakim},
+	year = {2006}
+}
+
+@inproceedings{zhang_transition-based_2009,
+	title = {Transition-based parsing of the {Chinese} treebank using a global discriminative model},
+	booktitle = {Proceedings of the 11th {International} {Conference} on {Parsing} {Technologies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Zhang, Yue and Clark, Stephen},
+	year = {2009},
+	pages = {162--171}
+}
+
+@inproceedings{covington_fundamental_2001,
+	title = {A fundamental algorithm for dependency parsing},
+	booktitle = {Proceedings of the 39th annual {ACM} southeast conference},
+	publisher = {Citeseer},
+	author = {Covington, Michael A.},
+	year = {2001},
+	pages = {95--102}
+}
+
+@inproceedings{mann_simple_2007,
+	title = {Simple, robust, scalable semi-supervised learning via expectation regularization},
+	booktitle = {Proceedings of the 24th international conference on {Machine} learning},
+	publisher = {ACM},
+	author = {Mann, Gideon S. and McCallum, Andrew},
+	year = {2007},
+	pages = {593--600}
+}
+
+@article{mann_generalized_2010,
+	title = {Generalized expectation criteria for semi-supervised learning with weakly labeled data},
+	volume = {11},
+	number = {Feb},
+	journal = {Journal of machine learning research},
+	author = {Mann, Gideon S. and McCallum, Andrew},
+	year = {2010},
+	pages = {955--984}
+}
+
+@inproceedings{chang_guiding_2007,
+	title = {Guiding semi-supervision with constraint-driven learning},
+	booktitle = {Proceedings of the 45th annual meeting of the association of computational linguistics},
+	author = {Chang, Ming-Wei and Ratinov, Lev and Roth, Dan},
+	year = {2007},
+	pages = {280--287}
+}
+
+@inproceedings{gubbins_dependency_2013,
+	title = {Dependency language models for sentence completion},
+	booktitle = {Proceedings of the 2013 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	author = {Gubbins, Joseph and Vlachos, Andreas},
+	year = {2013},
+	pages = {1405--1410}
+}
+
+@inproceedings{marcu_spmt:_2006,
+	title = {{SPMT}: {Statistical} machine translation with syntactified target language phrases},
+	shorttitle = {{SPMT}},
+	booktitle = {Proceedings of the 2006 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Marcu, Daniel and Wang, Wei and Echihabi, Abdessamad and Knight, Kevin},
+	year = {2006},
+	pages = {44--52}
+}
+
+@article{shen_new_2008,
+	title = {A new string-to-dependency machine translation algorithm with a target dependency language model},
+	journal = {Proceedings of ACL-08: HLT},
+	author = {Shen, Libin and Xu, Jinxi and Weischedel, Ralph},
+	year = {2008},
+	pages = {577--585}
+}
+
+@inproceedings{chiang_hierarchical_2005,
+	title = {A hierarchical phrase-based model for statistical machine translation},
+	booktitle = {Proceedings of the 43rd {Annual} {Meeting} on {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Chiang, David},
+	year = {2005},
+	pages = {263--270}
+}
+
+@inproceedings{bao_knowledge-based_2014,
+	title = {Knowledge-based question answering as machine translation},
+	volume = {1},
+	booktitle = {Proceedings of the 52nd {Annual} {Meeting} of the {Association} for {Computational} {Linguistics} ({Volume} 1: {Long} {Papers})},
+	author = {Bao, Junwei and Duan, Nan and Zhou, Ming and Zhao, Tiejun},
+	year = {2014},
+	pages = {967--976}
+}
+
+@inproceedings{punyakanok_mapping_2004,
+	title = {Mapping dependencies trees: {An} application to question answering},
+	shorttitle = {Mapping dependencies trees},
+	booktitle = {Proceedings of {AI}\&{Math} 2004},
+	author = {Punyakanok, Vasin and Roth, Dan and Yih, Wen-tau},
+	year = {2004},
+	pages = {1--10}
+}
+
+@article{fundel_relex--relation_2007,
+	title = {{RelEx}--{Relation} extraction using dependency parse trees},
+	volume = {23},
+	issn = {1367-4803, 1460-2059},
+	url = {https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btl616},
+	doi = {10.1093/bioinformatics/btl616},
+	language = {en},
+	number = {3},
+	urldate = {2018-03-14TZ},
+	journal = {Bioinformatics},
+	author = {Fundel, K. and Kuffner, R. and Zimmer, R.},
+	month = feb,
+	year = {2007},
+	pages = {365--371}
+}
+
+@inproceedings{mcclosky_reranking_2006,
+	title = {Reranking and self-training for parser adaptation},
+	booktitle = {Proceedings of the 21st {International} {Conference} on {Computational} {Linguistics} and the 44th annual meeting of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {McClosky, David and Charniak, Eugene and Johnson, Mark},
+	year = {2006},
+	pages = {337--344}
+}
+
+@inproceedings{chen_semi-supervised_2013,
+	title = {Semi-supervised feature transformation for dependency parsing},
+	booktitle = {Proceedings of the 2013 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	author = {Chen, Wenliang and Zhang, Min and Zhang, Yue},
+	year = {2013},
+	pages = {1303--1313}
+}
+
+@inproceedings{sogaard_semi-supervised_2010,
+	title = {Semi-supervised dependency parsing using generalized tri-training},
+	booktitle = {Proceedings of the 23rd {International} {Conference} on {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Søgaard, Anders and Rishøj, Christian},
+	year = {2010},
+	pages = {1065--1073}
+}
+
+@inproceedings{manning_stanford_2014,
+	title = {The {Stanford} {CoreNLP} {Natural} {Language} {Processing} {Toolkit}},
+	url = {http://www.aclweb.org/anthology/P/P14/P14-5010},
+	booktitle = {Association for {Computational} {Linguistics} ({ACL}) {System} {Demonstrations}},
+	author = {Manning, Christopher D. and Surdeanu, Mihai and Bauer, John and Finkel, Jenny and Bethard, Steven J. and McClosky, David},
+	year = {2014},
+	pages = {55--60}
+}
+
+@inproceedings{petrov_overview_2012,
+	title = {Overview of the 2012 shared task on parsing the web},
+	volume = {59},
+	booktitle = {Notes of the first workshop on syntactic analysis of non-canonical language (sancl)},
+	publisher = {Citeseer},
+	author = {Petrov, Slav and McDonald, Ryan},
+	year = {2012}
+}
+
+@article{petrov_universal_2011,
+	title = {A {Universal} {Part}-of-{Speech} {Tagset}},
+	url = {http://arxiv.org/abs/1104.2086},
+	abstract = {To facilitate future research in unsupervised induction of syntactic structure and to standardize best-practices, we propose a tagset that consists of twelve universal part-of-speech categories. In addition to the tagset, we develop a mapping from 25 different treebank tagsets to this universal set. As a result, when combined with the original treebank data, this universal tagset and mapping produce a dataset consisting of common parts-of-speech for 22 different languages. We highlight the use of this resource via two experiments, including one that reports competitive accuracies for unsupervised grammar induction without gold standard part-of-speech tags.},
+	urldate = {2018-03-08TZ},
+	journal = {arXiv:1104.2086 [cs]},
+	author = {Petrov, Slav and Das, Dipanjan and McDonald, Ryan},
+	month = apr,
+	year = {2011},
+	note = {arXiv: 1104.2086},
+	keywords = {Computer Science - Computation and Language}
+}
+
+@techreport{de_marneffe_stanford_2008,
+	title = {Stanford typed dependencies manual},
+	institution = {Technical report, Stanford University},
+	author = {De Marneffe, Marie-Catherine and Manning, Christopher D.},
+	year = {2008}
+}
+
+@inproceedings{taskar_learning_2005,
+	address = {New York, NY, USA},
+	series = {{ICML} '05},
+	title = {Learning {Structured} {Prediction} {Models}: {A} {Large} {Margin} {Approach}},
+	isbn = {978-1-59593-180-1},
+	shorttitle = {Learning {Structured} {Prediction} {Models}},
+	url = {http://doi.acm.org/10.1145/1102351.1102464},
+	doi = {10.1145/1102351.1102464},
+	abstract = {We consider large margin estimation in a broad range of prediction models where inference involves solving combinatorial optimization problems, for example, weighted graph-cuts or matchings. Our goal is to learn parameters such that inference using the model reproduces correct answers on the training data. Our method relies on the expressive power of convex optimization problems to compactly capture inference or solution optimality in structured prediction models. Directly embedding this structure within the learning formulation produces concise convex problems for efficient estimation of very complex and diverse models. We describe experimental results on a matching task, disulfide connectivity prediction, showing significant improvements over state-of-the-art methods.},
+	urldate = {2018-03-05TZ},
+	booktitle = {Proceedings of the 22Nd {International} {Conference} on {Machine} {Learning}},
+	publisher = {ACM},
+	author = {Taskar, Ben and Chatalbashev, Vassil and Koller, Daphne and Guestrin, Carlos},
+	year = {2005},
+	pages = {896--903}
+}
+
+@article{charniak_bllip_2000,
+	title = {{BLLIP} 1987-89 {WSJ} {Corpus} {Release} 1 {LDC}2000T43},
+	journal = {Linguistic Data Consortium},
+	author = {Charniak, Eugene and Blaheta, Don and Ge, Niyu and Hall, Keith and Hale, John and Johnson, Mark},
+	year = {2000}
+}
+
+@inproceedings{pennington_glove:_2014,
+	title = {Glove: {Global} vectors for word representation},
+	shorttitle = {Glove},
+	booktitle = {Proceedings of the 2014 conference on empirical methods in natural language processing ({EMNLP})},
+	author = {Pennington, Jeffrey and Socher, Richard and Manning, Christopher},
+	year = {2014},
+	pages = {1532--1543}
+}
+
+@inproceedings{li_active_2016,
+	title = {Active learning for dependency parsing with partial annotation},
+	volume = {1},
+	booktitle = {Proceedings of the 54th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics} ({Volume} 1: {Long} {Papers})},
+	author = {Li, Zhenghua and Zhang, Min and Zhang, Yue and Liu, Zhanyi and Chen, Wenliang and Wu, Hua and Wang, Haifeng},
+	year = {2016},
+	pages = {344--354}
+}
+
+@article{coppersmith_matrix_1990,
+	series = {Computational algebraic complexity editorial},
+	title = {Matrix multiplication via arithmetic progressions},
+	volume = {9},
+	issn = {0747-7171},
+	url = {http://www.sciencedirect.com/science/article/pii/S0747717108800132},
+	doi = {10.1016/S0747-7171(08)80013-2},
+	abstract = {We present a new method for accelerating matrix multiplication asymptotically. Thiswork builds on recent ideas of Volker Strassen, by using a basic trilinear form which is not a matrix product. We make novel use of the Salem-Spencer Theorem, which gives a fairly dense set of integers with no three-term arithmetic progression. Our resulting matrix exponent is 2.376.},
+	number = {3},
+	urldate = {2018-03-02TZ},
+	journal = {Journal of Symbolic Computation},
+	author = {Coppersmith, Don and Winograd, Shmuel},
+	month = mar,
+	year = {1990},
+	pages = {251--280}
+}
+
+@book{arora_computational_2009,
+	address = {Cambridge ; New York},
+	edition = {1 edition},
+	title = {Computational {Complexity}: {A} {Modern} {Approach}},
+	isbn = {978-0-521-42426-4},
+	shorttitle = {Computational {Complexity}},
+	abstract = {This beginning graduate textbook describes both recent achievements and classical results of computational complexity theory. Requiring essentially no background apart from mathematical maturity, the book can be used as a reference for self-study for anyone interested in complexity, including physicists, mathematicians, and other scientists, as well as a textbook for a variety of courses and seminars. More than 300 exercises are included with a selected hint set.},
+	language = {English},
+	publisher = {Cambridge University Press},
+	author = {Arora, Sanjeev and Barak, Boaz},
+	month = apr,
+	year = {2009}
+}
+
+@article{abadi_tensorflow:_2016,
+	title = {{TensorFlow}: {Large}-{Scale} {Machine} {Learning} on {Heterogeneous} {Distributed} {Systems}},
+	shorttitle = {{TensorFlow}},
+	url = {http://arxiv.org/abs/1603.04467},
+	abstract = {TensorFlow is an interface for expressing machine learning algorithms, and an implementation for executing such algorithms. A computation expressed using TensorFlow can be executed with little or no change on a wide variety of heterogeneous systems, ranging from mobile devices such as phones and tablets up to large-scale distributed systems of hundreds of machines and thousands of computational devices such as GPU cards. The system is flexible and can be used to express a wide variety of algorithms, including training and inference algorithms for deep neural network models, and it has been used for conducting research and for deploying machine learning systems into production across more than a dozen areas of computer science and other fields, including speech recognition, computer vision, robotics, information retrieval, natural language processing, geographic information extraction, and computational drug discovery. This paper describes the TensorFlow interface and an implementation of that interface that we have built at Google. The TensorFlow API and a reference implementation were released as an open-source package under the Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.},
+	urldate = {2018-03-01TZ},
+	journal = {arXiv:1603.04467 [cs]},
+	author = {Abadi, Martín and Agarwal, Ashish and Barham, Paul and Brevdo, Eugene and Chen, Zhifeng and Citro, Craig and Corrado, Greg S. and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Goodfellow, Ian and Harp, Andrew and Irving, Geoffrey and Isard, Michael and Jia, Yangqing and Jozefowicz, Rafal and Kaiser, Lukasz and Kudlur, Manjunath and Levenberg, Josh and Mane, Dan and Monga, Rajat and Moore, Sherry and Murray, Derek and Olah, Chris and Schuster, Mike and Shlens, Jonathon and Steiner, Benoit and Sutskever, Ilya and Talwar, Kunal and Tucker, Paul and Vanhoucke, Vincent and Vasudevan, Vijay and Viegas, Fernanda and Vinyals, Oriol and Warden, Pete and Wattenberg, Martin and Wicke, Martin and Yu, Yuan and Zheng, Xiaoqiang},
+	month = mar,
+	year = {2016},
+	note = {arXiv: 1603.04467},
+	keywords = {Computer Science - Distributed, Parallel, and Cluster Computing, Computer Science - Learning}
+}
+
+@inproceedings{havelka_projectivity_2007,
+	title = {Projectivity in {Totally} {Ordered} {Rooted} {Trees}: {An} {Alternative} {Definition} of {Projectivity} and {Optimal} {Algorithms} for {Detecting} {Non}-{Projective} {Edges} and {Projectivizing} {Totally} {Ordered} {Rooted} {Trees}},
+	author = {Havelka, Jirí},
+	year = {2007}
+}
+
+@inproceedings{havelka_beyond_2007,
+	title = {Beyond projectivity: {Multilingual} evaluation of constraints and measures on non-projective structures},
+	shorttitle = {Beyond projectivity},
+	booktitle = {Proceedings of the 45th {Annual} {Meeting} of the {Association} of {Computational} {Linguistics}},
+	author = {Havelka, Jiri},
+	year = {2007},
+	pages = {608--615}
+}
+
+@book{kuhlmann_dependency_2010,
+	address = {Berlin Heidelberg},
+	series = {Lecture {Notes} in {Artificial} {Intelligence}},
+	title = {Dependency {Structures} and {Lexicalized} {Grammars}: {An} {Algebraic} {Approach}},
+	isbn = {978-3-642-14567-4},
+	shorttitle = {Dependency {Structures} and {Lexicalized} {Grammars}},
+	url = {//www.springer.com/la/book/9783642145674},
+	abstract = {Since 2002, FoLLI has awarded an annual prize for outstanding dissertations in the fields of Logic, Language and Information. This book is based on the PhD thesis of Marco Kuhlmann, joint winner of the E.W. Beth dissertation award in 2008. Kuhlmann’s thesis lays new theoretical foundations for the study of non-projective dependency grammars. These grammars are becoming increasingly important for approaches to statistical parsing in computational linguistics that deal with free word order and long-distance dependencies. The author provides new formal tools to define and understand dependency grammars, presents two new dependency language hierarchies with polynomial parsing algorithms, establishes the practical significance of these hierarchies through corpus studies, and links his work to the phrase-structure grammar tradition through an equivalence result with tree-adjoining grammars. The work bridges the gaps between linguistics and theoretical computer science, between theoretical and empirical approaches in computational linguistics, and between previously disconnected strands of formal language research.},
+	language = {en},
+	urldate = {2018-02-28TZ},
+	publisher = {Springer-Verlag},
+	editor = {Kuhlmann, Marco},
+	year = {2010}
+}
+
+@article{gomez-rodriguez_divisible_2013,
+	title = {Divisible {Transition} {Systems} and {Multiplanar} {Dependency} {Parsing}},
+	volume = {39},
+	url = {/journal/10.1162/coli_a_00150},
+	doi = {10.1162/COLI_a_00150},
+	language = {en},
+	number = {4},
+	urldate = {2018-02-28TZ},
+	journal = {Computational Linguistics},
+	author = {Gómez-Rodríguez, Carlos and Nivre, Joakim},
+	month = dec,
+	year = {2013},
+	pages = {799--845}
+}
+
+@inproceedings{nivre_pseudo-projective_2005,
+	address = {Stroudsburg, PA, USA},
+	series = {{ACL} '05},
+	title = {Pseudo-projective {Dependency} {Parsing}},
+	url = {https://doi.org/10.3115/1219840.1219853},
+	doi = {10.3115/1219840.1219853},
+	abstract = {In order to realize the full potential of dependency-based syntactic parsing, it is desirable to allow non-projective dependency structures. We show how a data-driven deterministic dependency parser, in itself restricted to projective structures, can be combined with graph transformation techniques to produce non-projective structures. Experiments using data from the Prague Dependency Treebank show that the combined system can handle non-projective constructions with a precision sufficient to yield a significant improvement in overall parsing accuracy. This leads to the best reported performance for robust non-projective parsing of Czech.},
+	urldate = {2018-02-28TZ},
+	booktitle = {Proceedings of the 43rd {Annual} {Meeting} on {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Nivre, Joakim and Nilsson, Jens},
+	year = {2005},
+	pages = {99--106}
+}
+
+@article{zhang_understanding_2016,
+	title = {Understanding deep learning requires rethinking generalization},
+	url = {http://arxiv.org/abs/1611.03530},
+	abstract = {Despite their massive size, successful deep artificial neural networks can exhibit a remarkably small difference between training and test performance. Conventional wisdom attributes small generalization error either to properties of the model family, or to the regularization techniques used during training. Through extensive systematic experiments, we show how these traditional approaches fail to explain why large neural networks generalize well in practice. Specifically, our experiments establish that state-of-the-art convolutional networks for image classification trained with stochastic gradient methods easily fit a random labeling of the training data. This phenomenon is qualitatively unaffected by explicit regularization, and occurs even if we replace the true images by completely unstructured random noise. We corroborate these experimental findings with a theoretical construction showing that simple depth two neural networks already have perfect finite sample expressivity as soon as the number of parameters exceeds the number of data points as it usually does in practice. We interpret our experimental findings by comparison with traditional models.},
+	urldate = {2018-02-28TZ},
+	journal = {arXiv:1611.03530 [cs]},
+	author = {Zhang, Chiyuan and Bengio, Samy and Hardt, Moritz and Recht, Benjamin and Vinyals, Oriol},
+	month = nov,
+	year = {2016},
+	note = {arXiv: 1611.03530},
+	keywords = {Computer Science - Learning}
+}
+
+@inproceedings{krizhevsky_imagenet_2012,
+	title = {Imagenet classification with deep convolutional neural networks},
+	booktitle = {Advances in neural information processing systems},
+	author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
+	year = {2012},
+	pages = {1097--1105}
+}
+
+@article{duchi_adaptive_2011,
+	title = {Adaptive subgradient methods for online learning and stochastic optimization},
+	volume = {12},
+	number = {Jul},
+	journal = {Journal of Machine Learning Research},
+	author = {Duchi, John and Hazan, Elad and Singer, Yoram},
+	year = {2011},
+	pages = {2121--2159}
+}
+
+@article{ren_structured_nodate,
+	title = {Structured {Prediction} with {Adversarial} {Constraint} {Learning}},
+	journal = {31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.},
+	author = {Ren, Hongyu and Stewart, Russell and Song, Jiaming and Kuleshov, Volodymyr and Ermon, Stefano}
+}
+
+@article{hochreiter_long_1997,
+	title = {Long {Short}-{Term} {Memory}},
+	volume = {9},
+	issn = {0899-7667},
+	url = {http://dx.doi.org/10.1162/neco.1997.9.8.1735},
+	doi = {10.1162/neco.1997.9.8.1735},
+	abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
+	number = {8},
+	urldate = {2018-02-27TZ},
+	journal = {Neural Comput.},
+	author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+	month = nov,
+	year = {1997},
+	pages = {1735--1780}
+}
+
+@article{srivastava_dropout:_2014,
+	title = {Dropout: {A} simple way to prevent neural networks from overfitting},
+	volume = {15},
+	shorttitle = {Dropout},
+	number = {1},
+	journal = {The Journal of Machine Learning Research},
+	author = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+	year = {2014},
+	pages = {1929--1958}
+}
+
+@inproceedings{straka_tokenizing_2017,
+	address = {Vancouver, Canada},
+	title = {Tokenizing, {POS} {Tagging}, {Lemmatizing} and {Parsing} {UD} 2.0 with {UDPipe}},
+	url = {http://www.aclweb.org/anthology/K/K17/K17-3009.pdf},
+	abstract = {Many natural language processing tasks, including the most advanced ones, routinely start by several basic processing steps – tokenization and segmentation, most likely also POS tagging and lemmatization, and commonly parsing as well. A multilingual pipeline performing these steps can be trained using the Universal Dependencies project, which contains annotations of the described tasks for 50 languages in the latest release UD 2.0. We present an update to UDPipe, a simple-to-use pipeline processing CoNLL-U version 2.0 files, which performs these tasks for multiple languages without requiring additional external data. We provide models for all 50 languages of UD 2.0, and furthermore, the pipeline can be trained easily using data in CoNLL-U format. UDPipe is a standalone application in C++, with bindings available for Python, Java, C\# and Perl. In the CoNLL 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies, UDPipe was the eight best system, while achieving low running times and moderately sized models.},
+	booktitle = {Proceedings of the {CoNLL} 2017 {Shared} {Task}: {Multilingual} {Parsing} from {Raw} {Text} to {Universal} {Dependencies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Straka, Milan and Straková, Jana},
+	month = aug,
+	year = {2017},
+	pages = {88--99}
+}
+
+@article{edmonds_optimum_1967,
+	title = {Optimum {Branchings}},
+	journal = {Journal of Research of the National Bureau of Standards, 71B},
+	author = {Edmonds, Jack},
+	year = {1967},
+	pages = {233--240}
+}
+
+@inproceedings{shi_combining_2017,
+	address = {Vancouver, Canada},
+	title = {Combining {Global} {Models} for {Parsing} {Universal} {Dependencies}},
+	url = {http://www.aclweb.org/anthology/K/K17/K17-3003.pdf},
+	abstract = {We describe our entry, C2L2, to the CoNLL 2017 shared task on parsing Universal Dependencies from raw text. Our system features an ensemble of three global parsing paradigms, one graph-based and two transition-based. Each model leverages character-level bi-directional LSTMs as lexical feature extractors to encode morphological information. Though relying on baseline tokenizers and focusing only on parsing, our system ranked second in the official end-to-end evaluation with a macro-average of 75.00 LAS F1 score over 81 test treebanks. In addition, we had the top average performance on the four surprise languages and on the small treebank subset.},
+	booktitle = {Proceedings of the {CoNLL} 2017 {Shared} {Task}: {Multilingual} {Parsing} from {Raw} {Text} to {Universal} {Dependencies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Shi, Tianze and Wu, Felix G. and Chen, Xilun and Cheng, Yao},
+	month = aug,
+	year = {2017},
+	pages = {31--39}
+}
+
+@inproceedings{dozat_stanfords_2017,
+	address = {Vancouver, Canada},
+	title = {Stanford's {Graph}-based {Neural} {Dependency} {Parser} at the {CoNLL} 2017 {Shared} {Task}},
+	url = {http://www.aclweb.org/anthology/K/K17/K17-3002.pdf},
+	abstract = {This paper describes the neural dependency parser submitted by Stanford to the CoNLL 2017 Shared Task on parsing Universal Dependencies. Our system uses relatively simple LSTM networks to produce part of speech tags and labeled dependency parses from segmented and tokenized sequences of words. In order to address the rare word problem that abounds in languages with complex morphology, we include a character-based word representation that uses an LSTM to produce embeddings from sequences of characters. Our system was ranked first according to all five relevant metrics for the system: UPOS tagging (93.09\%), XPOS tagging (82.27\%), unlabeled attachment score (81.30\%), labeled attachment score (76.30\%), and content word labeled attachment score (72.57\%).},
+	booktitle = {Proceedings of the {CoNLL} 2017 {Shared} {Task}: {Multilingual} {Parsing} from {Raw} {Text} to {Universal} {Dependencies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Dozat, Timothy and Qi, Peng and Manning, Christopher D.},
+	month = aug,
+	year = {2017},
+	pages = {20--30}
+}
+@inproceedings{zeman_conll_2017,
+	address = {Vancouver, Canada},
+	title = {{CoNLL} 2017 {Shared} {Task}: {Multilingual} {Parsing} from {Raw} {Text} to {Universal} {Dependencies}},
+	url = {http://www.aclweb.org/anthology/K/K17/K17-3001.pdf},
+	abstract = {The Conference on Computational Natural Language Learning (CoNLL) features a shared task, in which participants train and test their learning systems on the same data sets. In 2017, the task was devoted to learning dependency parsers for a large number of languages, in a real-world setting without any gold-standard annotation on input. All test sets followed a unified annotation scheme, namely that of Universal Dependencies. In this paper, we define the task and evaluation methodology, describe how the data sets were prepared, report and analyze the main results, and provide a brief categorization of the different approaches of the participating systems.},
+	booktitle = {Proceedings of the {CoNLL} 2017 {Shared} {Task}: {Multilingual} {Parsing} from {Raw} {Text} to {Universal} {Dependencies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Zeman, Daniel and Popel, Martin and Straka, Milan and Hajic, Jan and Nivre, Joakim and Ginter, Filip and Luotolahti, Juhani and Pyysalo, Sampo and Petrov, Slav and Potthast, Martin and Tyers, Francis and Badmaeva, Elena and Gokirmak, Memduh and Nedoluzhko, Anna and Cinkova, Silvie and Hajic jr., Jan and Hlavacova, Jaroslava and Kettnerová, Václava and Uresova, Zdenka and Kanerva, Jenna and Ojala, Stina and Missilä, Anna and Manning, Christopher D. and Schuster, Sebastian and Reddy, Siva and Taji, Dima and Habash, Nizar and Leung, Herman and de Marneffe, Marie-Catherine and Sanguinetti, Manuela and Simi, Maria and Kanayama, Hiroshi and dePaiva, Valeria and Droganova, Kira and Martínez Alonso, Héctor and Çöltekin, Çağrı and Sulubacak, Umut and Uszkoreit, Hans and Macketanz, Vivien and Burchardt, Aljoscha and Harris, Kim and Marheinecke, Katrin and Rehm, Georg and Kayadelen, Tolga and Attia, Mohammed and Elkahky, Ali and Yu, Zhuoran and Pitler, Emily and Lertpradit, Saran and Mandl, Michael and Kirchner, Jesse and Alcalde, Hector Fernandez and Strnadová, Jana and Banerjee, Esha and Manurung, Ruli and Stella, Antonio and Shimada, Atsuko and Kwak, Sookyoung and Mendonca, Gustavo and Lando, Tatiana and Nitisaroj, Rattima and Li, Josie},
+	month = aug,
+	year = {2017},
+	pages = {1--19}
+}
+
+@article{tarjan_finding_1977,
+	title = {Finding optimum branchings},
+	volume = {7},
+	issn = {1097-0037},
+	url = {http://onlinelibrary.wiley.com/doi/10.1002/net.3230070103/abstract},
+	doi = {10.1002/net.3230070103},
+	abstract = {Chu and Liu, Edmonds, and Bock have independently devised an efficient algorithm to find an optimum branching in a directed graph. We give an implementation of the algorithm which runs in 0(m logn) time if the problem graph has n vertices and m edges. A modification for dense graphs gives a running time of 0(n2). We also show that the unmodified algorithm runs in 0(n(log n)2 +m) time on an average graph, assuming a uniform probability distribution.},
+	language = {en},
+	number = {1},
+	urldate = {2018-02-27TZ},
+	journal = {Networks},
+	author = {Tarjan, R. E.},
+	month = mar,
+	year = {1977},
+	pages = {25--35}
+}
+
+@article{chu_shortest_1965,
+	title = {On the shortest arborescence of a directed graph},
+	volume = {14},
+	journal = {Science Sinica},
+	author = {Chu, Y. J. and Liu, T. H.},
+	year = {1965}
+}
+
+@inproceedings{nivre_non-projective_2009,
+	title = {Non-projective dependency parsing in expected linear time},
+	booktitle = {Proceedings of the {Joint} {Conference} of the 47th {Annual} {Meeting} of the {ACL} and the 4th {International} {Joint} {Conference} on {Natural} {Language} {Processing} of the {AFNLP}: {Volume} 1-{Volume} 1},
+	publisher = {Association for Computational Linguistics},
+	author = {Nivre, Joakim},
+	year = {2009},
+	pages = {351--359}
+}
+
+@inproceedings{nivre_constraints_2006,
+	title = {Constraints on non-projective dependency parsing},
+	booktitle = {11th {Conference} of the {European} {Chapter} of the {Association} for {Computational} {Linguistics}},
+	author = {Nivre, Joakim},
+	year = {2006}
+}
+
+@inproceedings{gomez-rodriguez_transition-based_2010,
+	title = {A transition-based parser for 2-planar dependency structures},
+	booktitle = {Proceedings of the 48th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Gómez-Rodríguez, Carlos and Nivre, Joakim},
+	year = {2010},
+	pages = {1492--1501}
+}
+
+@inproceedings{gomez-rodriguez_parsing_2009,
+	title = {Parsing mildly non-projective dependency structures},
+	booktitle = {Proceedings of the 12th {Conference} of the {European} {Chapter} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Gómez-Rodríguez, Carlos and Weir, David and Carroll, John},
+	year = {2009},
+	pages = {291--299}
+}
+
+@inproceedings{nivre_universal_2016,
+	title = {Universal {Dependencies} v1: {A} {Multilingual} {Treebank} {Collection}.},
+	shorttitle = {Universal {Dependencies} v1},
+	booktitle = {{LREC}},
+	author = {Nivre, Joakim and de Marneffe, Marie-Catherine and Ginter, Filip and Goldberg, Yoav and Hajic, Jan and Manning, Christopher D. and McDonald, Ryan T. and Petrov, Slav and Pyysalo, Sampo and Silveira, Natalia},
+	year = {2016}
+}
+
+@inproceedings{zhang_tale_2008,
+	title = {A tale of two parsers: investigating and combining graph-based and transition-based dependency parsing using beam-search},
+	shorttitle = {A tale of two parsers},
+	booktitle = {Proceedings of the {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Zhang, Yue and Clark, Stephen},
+	year = {2008},
+	pages = {562--571}
+}
+
+@inproceedings{nivre_efficient_2003,
+	title = {An {Efficient} {Algorithm} for {Projective} {Dependency} {Parsing}},
+	abstract = {This paper presents a deterministic parsing algorithm for projective dependency grammar. The  running time of the algorithm is linear in the length of the input string, and the dependency graph  produced is guaranteed to be projective and acyclic. The algorithm has been experimentally  evaluated in parsing unrestricted Swedish text, achieving an accuracy above 85\% with a very  simple grammar.},
+	booktitle = {Proceedings of the 8th {International} {Workshop} on {Parsing} {Technologies} ({IWPT}},
+	author = {Nivre, Joakim},
+	year = {2003},
+	pages = {149--160}
+}
+
+@inproceedings{hall_k-best_2007,
+	title = {K-best {Spanning} {Tree} {Parsing}.},
+	abstract = {This paper introduces a Maximum Entropy dependency parser based on an efficient k- best Maximum Spanning Tree (MST) algo- rithm. Although recent work suggests that the edge-factored constraints of the MST al- gorithm significantly inhibit parsing accu- racy, we show that generating the 50-best parses according to an edge-factored model has an oracle performance well above the 1-best performance of the best dependency parsers. This motivates our parsing ap- proach, which is based on reranking the k- best parses generated by an edge-factored model. Oracle parse accuracy results are presented for the edge-factored model and 1-best results for the reranker on eight lan- guages (seven from CoNLL-X and English).},
+	author = {Hall, Keith},
+	month = jan,
+	year = {2007}
+}
+
+@inproceedings{lei_low-rank_2014,
+	title = {Low-rank tensors for scoring dependency structures},
+	volume = {1},
+	booktitle = {Proceedings of the 52nd {Annual} {Meeting} of the {Association} for {Computational} {Linguistics} ({Volume} 1: {Long} {Papers})},
+	author = {Lei, Tao and Xin, Yu and Zhang, Yuan and Barzilay, Regina and Jaakkola, Tommi},
+	year = {2014},
+	pages = {1381--1391}
+}
+
+@article{martins_turning_2013,
+	title = {Turning on the turbo: {Fast} third-order non-projective turbo parsers},
+	shorttitle = {Turning on the turbo},
+	author = {Martins, André FT and Almeida, Miguel B. and Smith, Noah A.},
+	year = {2013}
+}
+
+@article{goldberg_dynamic_2012,
+	title = {A dynamic oracle for arc-eager dependency parsing},
+	journal = {Proceedings of COLING 2012},
+	author = {Goldberg, Yoav and Nivre, Joakim},
+	year = {2012},
+	pages = {959--976}
+}
+
+@inproceedings{chen_fast_2014,
+	title = {A fast and accurate dependency parser using neural networks},
+	booktitle = {Proceedings of the 2014 conference on empirical methods in natural language processing ({EMNLP})},
+	author = {Chen, Danqi and Manning, Christopher},
+	year = {2014},
+	pages = {740--750}
+}
+
+@article{nivre_algorithms_2008,
+	title = {Algorithms for deterministic incremental dependency parsing},
+	volume = {34},
+	number = {4},
+	journal = {Computational Linguistics},
+	author = {Nivre, Joakim},
+	year = {2008},
+	pages = {513--553}
+}
+
+@article{schuster_bidirectional_1997,
+	title = {Bidirectional recurrent neural networks},
+	volume = {45},
+	number = {11},
+	journal = {IEEE Transactions on Signal Processing},
+	author = {Schuster, Mike and Paliwal, Kuldip K.},
+	year = {1997},
+	pages = {2673--2681}
+}
+
+@article{marcus_building_1993,
+	title = {Building a large annotated corpus of {English}: {The} {Penn} {Treebank}},
+	volume = {19},
+	shorttitle = {Building a large annotated corpus of {English}},
+	number = {2},
+	journal = {Computational linguistics},
+	author = {Marcus, Mitchell P. and Marcinkiewicz, Mary Ann and Santorini, Beatrice},
+	year = {1993},
+	pages = {313--330}
+}
+
+@inproceedings{yu_exploring_2015,
+	title = {Exploring {Confidence}-based {Self}-training for {Multilingual} {Dependency} {Parsing} in an {Under}-{Resourced} {Language} {Scenario}},
+	booktitle = {Proceedings of the {Third} {International} {Conference} on {Dependency} {Linguistics} ({Depling} 2015)},
+	author = {Yu, Juntao and Bohnet, Bernd},
+	year = {2015},
+	pages = {350--358}
+}
+
+@inproceedings{goldberg_efficient_2010,
+	title = {An efficient algorithm for easy-first non-directional dependency parsing},
+	booktitle = {Human {Language} {Technologies}: {The} 2010 {Annual} {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Goldberg, Yoav and Elhadad, Michael},
+	year = {2010},
+	pages = {742--750}
+}
+
+@inproceedings{reichart_self-training_2007,
+	title = {Self-training for enhancement and domain adaptation of statistical parsers trained on small datasets},
+	booktitle = {Proceedings of the 45th {Annual} {Meeting} of the {Association} of {Computational} {Linguistics}},
+	author = {Reichart, Roi and Rappoport, Ari},
+	year = {2007},
+	pages = {616--623}
+}
+
+@inproceedings{yu_domain_2015,
+	title = {Domain adaptation for dependency parsing via self-training},
+	booktitle = {Proceedings of the 14th {International} {Conference} on {Parsing} {Technologies}},
+	author = {Yu, Juntao and Elkaref, Mohab and Bohnet, Bernd},
+	year = {2015},
+	pages = {1--10}
+}
+
+@article{koo_simple_2008,
+	title = {Simple semi-supervised dependency parsing},
+	journal = {Proceedings of ACL-08: HLT},
+	author = {Koo, Terry and Carreras, Xavier and Collins, Michael},
+	year = {2008},
+	pages = {595--603}
+}
+
+@article{kiperwasser_easy-first_2016,
+	title = {Easy-first dependency parsing with hierarchical tree {LSTMs}},
+	journal = {arXiv preprint arXiv:1603.00375},
+	author = {Kiperwasser, Eliyahu and Goldberg, Yoav},
+	year = {2016}
+}
+
+@inproceedings{kiperwasser_semi-supervised_2015,
+	title = {Semi-supervised dependency parsing using bilexical contextual features from auto-parsed data},
+	booktitle = {Proceedings of the 2015 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	author = {Kiperwasser, Eliyahu and Goldberg, Yoav},
+	year = {2015},
+	pages = {1348--1353}
+}
+
+@inproceedings{zhang_steps_2014,
+	title = {Steps to excellence: {Simple} inference with refined scoring of dependency trees},
+	shorttitle = {Steps to excellence},
+	publisher = {Association for Computational Linguistics},
+	author = {Zhang, Yuan and Lei, Tao and Barzilay, Regina and Jaakkola, Tommi and Globerson, Amir},
+	year = {2014}
+}
+
+@inproceedings{mcdonald_online_2005,
+	title = {Online large-margin training of dependency parsers},
+	booktitle = {Proceedings of the 43rd annual meeting on association for computational linguistics},
+	publisher = {Association for Computational Linguistics},
+	author = {McDonald, Ryan and Crammer, Koby and Pereira, Fernando},
+	year = {2005},
+	pages = {91--98}
+}
+
+@inproceedings{eisner_three_1996,
+	title = {Three new probabilistic models for dependency parsing: {An} exploration},
+	shorttitle = {Three new probabilistic models for dependency parsing},
+	booktitle = {Proceedings of the 16th conference on {Computational} linguistics-{Volume} 1},
+	publisher = {Association for Computational Linguistics},
+	author = {Eisner, Jason M.},
+	year = {1996},
+	pages = {340--345}
+}
+
+@inproceedings{mcdonald_online_2006,
+	title = {Online learning of approximate dependency parsing algorithms},
+	booktitle = {11th {Conference} of the {European} {Chapter} of the {Association} for {Computational} {Linguistics}},
+	author = {McDonald, Ryan and Pereira, Fernando},
+	year = {2006}
+}
+
+@inproceedings{mcdonald_non-projective_2005,
+	title = {Non-projective dependency parsing using spanning tree algorithms},
+	booktitle = {Proceedings of the conference on {Human} {Language} {Technology} and {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {McDonald, Ryan and Pereira, Fernando and Ribarov, Kiril and Hajič, Jan},
+	year = {2005},
+	pages = {523--530}
+}
+
+@article{kingma_adam:_2014,
+	title = {Adam: {A} {Method} for {Stochastic} {Optimization}},
+	shorttitle = {Adam},
+	url = {http://arxiv.org/abs/1412.6980},
+	abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
+	urldate = {2018-02-26TZ},
+	journal = {arXiv:1412.6980 [cs]},
+	author = {Kingma, Diederik P. and Ba, Jimmy},
+	month = dec,
+	year = {2014},
+	note = {arXiv: 1412.6980},
+	keywords = {Computer Science - Learning}
+}
+
+@inproceedings{yu_character_2017,
+	title = {Character {Composition} {Model} with {Convolutional} {Neural} {Networks} for {Dependency} {Parsing} on {Morphologically} {Rich} {Languages}},
+	url = {http://aclweb.org/anthology/P17-2106},
+	doi = {10.18653/v1/P17-2106},
+	language = {en},
+	urldate = {2018-02-26TZ},
+	publisher = {Association for Computational Linguistics},
+	author = {Yu, Xiang and Vu, Ngoc Thang},
+	year = {2017},
+	pages = {672--678}
+}
+
+@article{ganchev_posterior_2010,
+	title = {Posterior regularization for structured latent variable models},
+	volume = {11},
+	number = {Jul},
+	journal = {Journal of Machine Learning Research},
+	author = {Ganchev, Kuzman and Gillenwater, Jennifer and Taskar, Ben},
+	year = {2010},
+	pages = {2001--2049}
+}
+
+@article{andor_globally_2016,
+	title = {Globally normalized transition-based neural networks},
+	journal = {arXiv preprint arXiv:1603.06042},
+	author = {Andor, Daniel and Alberti, Chris and Weiss, David and Severyn, Aliaksei and Presta, Alessandro and Ganchev, Kuzman and Petrov, Slav and Collins, Michael},
+	year = {2016}
+}
+
+@article{zhang_dependency_2016,
+	title = {Dependency {Parsing} as {Head} {Selection}},
+	url = {http://arxiv.org/abs/1606.01280},
+	abstract = {Conventional graph-based dependency parsers guarantee a tree structure both during training and inference. Instead, we formalize dependency parsing as the problem of independently selecting the head of each word in a sentence. Our model which we call {\textbackslash}textsc\{DeNSe\} (as shorthand for \{{\textbackslash}bf De\}pendency \{{\textbackslash}bf N\}eural \{{\textbackslash}bf Se\}lection) produces a distribution over possible heads for each word using features obtained from a bidirectional recurrent neural network. Without enforcing structural constraints during training, {\textbackslash}textsc\{DeNSe\} generates (at inference time) trees for the overwhelming majority of sentences, while non-tree outputs can be adjusted with a maximum spanning tree algorithm. We evaluate {\textbackslash}textsc\{DeNSe\} on four languages (English, Chinese, Czech, and German) with varying degrees of non-projectivity. Despite the simplicity of the approach, our parsers are on par with the state of the art.},
+	urldate = {2018-02-26TZ},
+	journal = {arXiv:1606.01280 [cs]},
+	author = {Zhang, Xingxing and Cheng, Jianpeng and Lapata, Mirella},
+	month = jun,
+	year = {2016},
+	note = {arXiv: 1606.01280},
+	keywords = {Computer Science - Computation and Language, Computer Science - Learning}
+}
+
+@inproceedings{li_high_2014,
+	title = {High order regularization for semi-supervised learning of structured output problems},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Li, Yujia and Zemel, Rich},
+	year = {2014},
+	pages = {1368--1376}
+}
+
+@inproceedings{chang_learning_2008,
+	title = {Learning and {Inference} with {Constraints}.},
+	booktitle = {{AAAI}},
+	author = {Chang, Ming-Wei and Ratinov, Lev-Arie and Rizzolo, Nicholas and Roth, Dan},
+	year = {2008},
+	pages = {1513--1518}
+}
+
+@inproceedings{bellare_alternating_2009,
+	title = {Alternating projections for learning with expectation constraints},
+	booktitle = {Proceedings of the {Twenty}-{Fifth} {Conference} on {Uncertainty} in {Artificial} {Intelligence}},
+	publisher = {AUAI Press},
+	author = {Bellare, Kedar and Druck, Gregory and McCallum, Andrew},
+	year = {2009},
+	pages = {43--50}
+}
+
+@article{kiperwasser_simple_2016,
+	title = {Simple and accurate dependency parsing using bidirectional {LSTM} feature representations},
+	journal = {arXiv preprint arXiv:1603.04351},
+	author = {Kiperwasser, Eliyahu and Goldberg, Yoav},
+	year = {2016}
+}
+
+@inproceedings{eriguchi_learning_2017,
+	title = {Learning to {Parse} and {Translate} {Improves} {Neural} {Machine} {Translation}},
+	url = {http://aclweb.org/anthology/P17-2012},
+	doi = {10.18653/v1/P17-2012},
+	language = {en},
+	urldate = {2018-02-25TZ},
+	publisher = {Association for Computational Linguistics},
+	author = {Eriguchi, Akiko and Tsuruoka, Yoshimasa and Cho, Kyunghyun},
+	year = {2017},
+	pages = {72--78}
+}
+
+@inproceedings{meshi_train_2016,
+	title = {Train and {Test} {Tightness} of {LP} {Relaxations} in {Structured} {Prediction}},
+	url = {http://proceedings.mlr.press/v48/meshi16.html},
+	abstract = {Structured prediction is used in areas such as computer vision and natural language processing to predict structured outputs such as segmentations or parse trees. In these settings, prediction is p...},
+	language = {en},
+	urldate = {2018-02-25TZ},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Meshi, Ofer and Mahdavi, Mehrdad and Weller, Adrian and Sontag, David},
+	month = jun,
+	year = {2016},
+	pages = {1776--1785}
+}
+
+@article{dozat_deep_2016,
+	title = {Deep {Biaffine} {Attention} for {Neural} {Dependency} {Parsing}},
+	url = {http://arxiv.org/abs/1611.01734},
+	abstract = {This paper builds off recent work from Kiperwasser \& Goldberg (2016) using neural attention in a simple graph-based dependency parser. We use a larger but more thoroughly regularized parser than other recent BiLSTM-based approaches, with biaffine classifiers to predict arcs and labels. Our parser gets state of the art or near state of the art performance on standard treebanks for six different languages, achieving 95.7\% UAS and 94.1\% LAS on the most popular English PTB dataset. This makes it the highest-performing graph-based parser on this benchmark---outperforming Kiperwasser Goldberg (2016) by 1.8\% and 2.2\%---and comparable to the highest performing transition-based parser (Kuncoro et al., 2016), which achieves 95.8\% UAS and 94.6\% LAS. We also show which hyperparameter choices had a significant effect on parsing accuracy, allowing us to achieve large gains over other graph-based approaches.},
+	urldate = {2018-02-25TZ},
+	journal = {arXiv:1611.01734 [cs]},
+	author = {Dozat, Timothy and Manning, Christopher D.},
+	month = nov,
+	year = {2016},
+	note = {arXiv: 1611.01734},
+	keywords = {Computer Science - Computation and Language, Computer Science - Neural and Evolutionary Computing}
+}

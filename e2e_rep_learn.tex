@@ -1,0 +1,14 @@
+\chapter{End-To-End Representation Learning}
+\label{e2e_rep_learn}
+
+\section{Domain Adaptation and Zero-Shot Learning} 
+Since the train and test data in our experiments come from different distributions, our experimental setup fits under the term of Domain Adaptation \cite{greenwade93}. This term describes the setting where one trains a learner to do a certain task (e.g classification) by labeled examples from a source distribution, and then applies the learned model on inputs from a different distribution.
+One reason that interest in such a setting exists is that in practice, when applying learned models in the real world, the input distribution may differ from the original dataset used for training, and may include an unlimited number of novel signals and scenarios. Thus for a learner to have a certain degree of robustness to such changes is of practical importance.\\
+% ZSL
+In the specific case of classification, if the target distribution is made of classes which were not seen at the train set, the problem is called Zero-Shot Learning (ZSL). Our experimental setting falls under this term as well, since although we don't annotate classes with specific distinctive labels, the labels that do exist (i.e the clustering matrices) come from an underlying distinctive classification of data points, and indeed the classes which underlie the partitions in the train set are mostly different than those in the test set (to the extent that in the first two datasets we experiment on, they are completely disjoint).
+Inductive transfer problems in general, and ZSL problems in particular, are challenging since a successful solution for such a problem cannot simply rely on memorizing a specific, fixed signal from the source distribution (since it may not appear later at the target distribution). Instead, a successful solution would have learned a representation for it's input, such that the novel signals encountered at test time are still represented "meaningfully", i.e in a way which is supportive for a correct decision. Let us illustrate this with an example.\\
+% generalization in domain adaptation
+For an example, suppose that at train time the learner is given images of birds from two classes, and it needs to map them to a metric space such that a K-means based clusterer will cluster them correctly (i.e, as in our setting). Suppose now that these classes only differ by that birds of class A have black wings, and birds of class B have white wings. Obviously, if we removed background pixels, a single neuron or "feature detector" would suffice for this task. Yet if   
+
+
+Lampert 09 does something similar, by transfering hand-crafted attributes.

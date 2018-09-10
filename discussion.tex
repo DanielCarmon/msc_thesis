@@ -1,0 +1,30 @@
+\chapter{Discussion}
+\label{sec:discussion}  
+
+Generally in structured prediction, and specifically in dependency grammars, obtaining annotated data requires expensive human expertise. However, unlabeled data is widely available on the web. Therefore, semi-supervised methods are of high interest in these fields.
+
+In this work, we presented a general semi-supervised approach for injecting well-known structural properties of dependency parsing, \textit{acyclicity} and \textit{projectivity}. This is done by differentiable loss function, punishing for violation of these constraints on unlabeled data. To the best of our knowledge, this is the first work that directly considers the model's continuous scores, rather than discrete outputs. Our method is well-suited for any first-order graph-based parser, and is independent of the underlying scoring mechanism.
+
+We were able to show improvement over a supervised baseline both in prediction performance and structural generalization\footnote{Namely, increase of valid structures during test time}. In addition, we analyzed a greedy approach for decoding.
+We also demonstrated how this procedure benefits from the improvement in structural generalization.
+
+We leave two natural extensions of this method for future work. The first considers designing strong discriminators to catch (perhaps unknown) phenomenas occurring in dependency trees. Architectures of such discriminators may vary and have not been addressed yet. Note that discriminators can also be combined with the inference procedure, by outputting structures with high likelihood\footnote{In other words, structures with high scores from the discriminator}.
+
+Extending our method to the discrete case is also of interest, since it is not always possible to come up with efficiently computable differentiable loss functions correlated to high-order constraints.
+
+\iffalse
+The key theoretical question in deep learning is why it succeeds in finding good models despite the non-convexity of the training loss. It is clear
+that an answer must characterize specific settings where deep learning provably works. Despite considerable recent effort, such a case has not been shown. Here
+we provide the first analysis of a non-linear architecture where gradient descent is globally optimal, for a certain input distribution, namely Gaussian. Thus our specific
+characterization is both in terms of architecture (no-overlap networks, single hidden layer, and average pooling) and input distribution. We show that  
+learning in no-overlap architectures is hard, so that some input distribution restriction is necessary for tractability. Note however, that it is certainly possible
+that other, non-Gaussian, distributions also result in tractability. Some candidates would be sub-Gaussian and log-concave distributions.
+
+Our derivation addressed the population risk, which for the Gaussian case can be calculated in closed form. In practice, one minimizes an empirical risk. Our experiments in \secref{nonoverlap_experiments} suggest that optimizing the empirical risk in the Gaussian case is tractable. It would be interesting to prove this formally. It is likely that measure concentration results can be used to get similar results to those we had for the population risk (for use of such tools see \cite{mei2016landscape,xu2016global}).
+
+Convolution layers are among the basic building block of neural networks. Our work is among the first to analyze optimization for these. The architecture we study is similar in structure to convolutional networks, in the sense
+of using parameter tying and pooling. However, most standard convolutional layers have overlap and use max pooling. In \secref{sec:nets_with_overlap} we provide initial results for the case of overlap, showing there is hope for proving 
+optimality for gradient descent with random restarts. Analyzing max pooling would be very interesting and is left for future work. 
+
+Finally, we note that distribution dependent tractability has been shown for intersection of halfspaces \cite{klivans2009baum}, which is a non-convolutional architecture. However, these results do not use gradient descent. It would be very interesting to use our techniques to try and understand gradient descent for the population risk in these settings.    
+\fi

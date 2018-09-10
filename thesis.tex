@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper, oneside]{report}
+\linespread{1.5}
+%\usepackage{mathptmx}
+
+
+\usepackage[pdftex]{graphicx}
+%\usepackage{epsfig}
+
+%\usepackage{classicthesis}
+\usepackage{slashbox}
+\usepackage{times}
+\usepackage{colortbl}
+
+\usepackage[final]{pdfpages}
+
+% natbib, graphicx, url,
+
+\usepackage{amssymb, amsthm, amsmath}
+
+\usepackage{makeidx}
+\usepackage{ifthen}
+\usepackage{adi_phd}
+\usepackage{graphicx}
+
+
+\usepackage[toc,page]{appendix}
+\usepackage[utf8]{inputenc}
+%\usepackage{algorithm2e}
+%\usepackage{algpseudocode}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{bbm}
+\usepackage{thmtools}
+\usepackage{thm-restate}
+\usepackage{algorithm}
+\usepackage{fancyhdr}
+\usepackage[noend]{algpseudocode}
+\usepackage{placeins}
+\usepackage{array,multirow}
+%\usepackage{cleveref}
+
+%\declaretheorem[name=Theorem,numberwithin=section]{thm}
+%\declaretheorem[name=Lemma,numberwithin=section]{lmm}
+%\declaretheorem[name=Assumption,numberwithin=section]{asm}
+%\declaretheorem[name=Definition,numberwithin=section]{defi}
+
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newcommand{\bs}{\mathbf}
+
+\newcommand{\V}[1]{\mathbf{#1}}
+
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bw}{\mathbf{w}}
+\newlength\myindent
+\setlength\myindent{2em}
+\newcommand\bindent{%
+  \begingroup
+  \setlength{\itemindent}{\myindent}
+  \addtolength{\algorithmicindent}{\myindent}
+}
+\newcommand\eindent{\endgroup}
+
+\DeclareGraphicsExtensions{.jpg,.pdf,.mps,.png}
+\graphicspath{ {./Figures/} }
+
+\usepackage{fancyhdr}
+\usepackage{subfigure}
+\pagestyle{fancy}
+% Remember chapter title
+\renewcommand{\chaptermark}[1]{\markright{Chapter. \thechapter:\ #1}{}}
+% section number and title
+\renewcommand{\sectionmark}[1]{\markright{Chapter \thesection\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}] %
+    {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\scshape\leftmark}] %
+    {\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+
+\usepackage[pdftex,
+pdftitle={Deep Representation Learning For Cluster Analysis},
+pdfauthor={Daniel Carmon}, ]{hyperref}
+\hypersetup{colorlinks=true,
+linkcolor=black, anchorcolor=blue, citecolor=blue, filecolor=blue,
+menucolor=blue, pagecolor=blue, urlcolor=blue}
+
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or January% 1
+  \or February% 2
+  \or March% 3
+  \or April% 4
+  \or May% 5
+  \or June% 6
+  \or July% 7
+  \or August% 8
+  \or September% 9
+  \or October% 10
+  \or November% 11
+  \or December% 12
+  \fi}
+
+
+\title{Deep Representation Learning For Cluster Analysis}
+\author{Daniel Carmon}
+
+\input{macros}
+\begin{document}
+
+\include{msc_titles}
+
+\cleardoublepage
+
+\include{acknowledgments}
+
+\setcounter{page}{1}
+
+\chapter*{Abstract\markboth{Abstract}{Abstract}}
+\input{abstract}
+\tableofcontents
+\newpage
+
+%\listoffigures
+
+\newpage
+
+%\chapter{Introduction}
+%\input{intro}
+
+\input{intro.tex}
+
+%\input{model.tex}
+
+%\input{structural_regularization.tex}
+\input{e2e_rep_learn.tex}
+\input{related_work.tex}
+
+%\input{structural_constraints.tex}
+\input{dkmpp.tex}
+\input{experiments.tex}
+
+%\input{inference.tex}
+%\input{perm_invar.tex}
+\input{discussion.tex}
+
+\newpage
+
+\bibliographystyle{alpha}
+\bibliography{Zotero}
+
+
+\includepdf[pages=-]{heb_abstract.pdf}
+
+\includepdf[pages=-]{cover_heb.pdf}
+
+\end{document}

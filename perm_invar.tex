@@ -1,0 +1,25 @@
+Sets as inputs to Neural Networks}
+Many computational tasks require as an input a \textit{set} of elements, i.e an invariance over any permutation of these elements is required from an algorithm which solves the said computational task.\\
+Examples for such tasks are quite vast (e.g computation of population statistics, and combinatorical problems such as the Knapsack Problem \cite{gareyjohnson79}), and the task of clustering demands this invariance as well.\\
+todo: add hand-written-circuit vs learned circuit part.
+\subsection{Permutation-invariant Neural Networks}
+Recently, \cite{zaheer17} proposed the following nessecary and sufficient condition for a neural architecture to be permutation invariant by design.\\
+todo: describe architecture condition
+\subsection{Permutation-invariance and permutation-equivariance}
+An alternative request from an architecture that realizes a function over sets, is to work with a representation which is permutation-\textit{equivariance} instead of permutation-\textit{invariant}.\\
+We say that a function $f\in X^n\rightarrow Y^n$ is permutation-equivariant if the following holds:\\
+$\forall\pi\in S_n: f(x_\pi(1),...,x_\pi(n))=(f(x))_\pi(1),...,(f(x))_\pi(n)$\\
+In other words: a function is permutation-equivariant if permuting the input = permuting the output by the same permutation. \\ 
+\cite{zaheer17} discusses permutation-equivariance, yet only for a limited function class, namely neural-networks with a single weight layer.\\
+Based on their work with permutation-invariance let us describe now a necessary and sufficient condition for a neural-network architecture to be permutation-equivariant.\\
+We claim the following:\\
+Lemma: \\
+A neural-network $\Phi$ is permutation-equivariant iff $f$ can be factored in the following way:\\
+$ f(x_1,...,x_n) = \Psi(x_1,DS(x_{-1})),...,\Psi(x_n,DS(x_{-n}))$\\
+Where $DS$ is a permutation-invariant architecture such as the one purposed at \cite{zaheer17}.\\
+Proof idea: \\
+The equivariance condition holds iff for every $i\in[n]$, $f(x)_i$ doesn't depend on the ordering of $x_{-i}$. \\ Therefore it is a function of two inputs: $x_i$, and $x_{-i}$ as a $\it{set}$. \\
+This factorization is necessary in the sense that if a function $f$ has the p.e property, then there is a network with the above architecture which implements it.\\ % up to epsilon
+In the task of classification, usually one is learning a classification rule $\Psi:X\rightarrow Y$. This fits in our lemma with $\Psi$ as defined above ignoring it's second argument. \\
+Yet in the task of clustering, such a $\Psi$ may not be sufficient, and context is usually be crucial. \\ E.g clustering 4 points on a randomly sampled 2D rectangle to two clusters, in attempt to minimize the Kmeans loss. One cannot solve this task by learning a fixed function from a single point to cluster identity.\\
+We later describe experiments with learning such "hollistic" clustering networks. 
