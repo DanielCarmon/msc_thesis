@@ -1,0 +1,24 @@
+\begin{algorithm}[H]
+\caption{Deep K-Means++ Learning}
+\begin{algorithmic}[1]
+	\State \textbf{Input:} Set of examples $\{\mathcal{X}_i\}_{i=1}^{M}$ from M different categories, Initial embedding parameters $\Theta_0$, Number of training steps $T$, Number $k$ of categories per train step, Size $n$ of batch per training step, Learning rates $\{\mu_i\}_{i=1}^{T}$.
+    \For{i = 0 to T-1}
+    	\State Sample cluster indices $\{1',..,k'\}$
+        \For{j = 0 to k-1}
+        	\State $X_j\gets$ Sample $\frac{n}{k}$ elements from $\mathcal{X}_{j'}$
+        \EndFor
+        \State $Y\gets \begin{bmatrix}
+    1_{\frac{n}{k},\frac{n}{k}} & 0 & \dots & 0 \\
+    0 & 1_{\frac{n}{k},\frac{n}{k}} & \dots & 0\\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \dots & 1_{\frac{n}{k},\frac{n}{k}}
+	\end{bmatrix} _{n,n}$ \Comment{ground-truth clustering matrix}
+        \State $X \gets [X_1,X_2,..,X_k]$ 
+        \State $\widetilde{X} \leftarrow$ Embed($X,\Theta_i$) \Comment{data embeddings}
+  		\State $\widetilde{Y} \leftarrow$ Deep K-Means++($\widetilde{X}$,k) \Comment{inferred clustering matrix}
+        \State $loss \gets \left\lVert Y-\widetilde{Y} \right\rVert ^{2}$ \Comment{Frobenius norm of matrix differences}
+        \State $\Theta_{i+1} \gets \Theta_i - \mu_i \frac{\partial loss}{\partial \Theta_i}$ \Comment{gradient descent} % todo: define mu
+    \EndFor
+    \State \Return $\Theta_T$
+\end{algorithmic}
+\end{algorithm}

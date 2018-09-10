@@ -1,0 +1,8 @@
+\begin{algorithm}[H]
+\caption{Get Distance Matrix}
+\begin{algorithmic}[1]
+	\State \textbf{Input:} Two matrices $A\in\mathbb{R}_{n,d},B\in\mathbb{R}_{k,d}$, with same row dimensionality
+    \State $D \gets (A\odot A)1_{d,k}-2AB^{T}+((B\odot B)1_{d,k})^{T}$ \Comment{Using lin. alg. identity: $||u-v||^2=||u||^2-2<u,v>+||v||^2$}
+    \State Return $D$ \Comment{$ij$'th cell stores squared euclidean distance between $i$'th row of $A$ and $j$'th row of $B$}
+\end{algorithmic}
+\end{algorithm}
