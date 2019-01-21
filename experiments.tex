@@ -44,6 +44,29 @@ II) Ambiguous Gaussians % should a different term be used?
 \section{Experiments With Real-World Data}
 \subsection{Datasets}
 \subsection{Experimental Protocol}
+\subsection{Model Selection}
+
+\begin{comment}
+meow
+\end{comment}
+step 0: show that init 2 still outperforms other inits. we have plot for this
+at first we checked which lr's are ok for the training to converge. this led us to 1e-5,1e-6.
+% data for next paragraph in dir first_try
+then we checked which bandwith params to use. at first we did this with lr=1e-5. this showed overfitting.
+later we tried with lr=1e-6, which did not result in overfitting. this is interesting- shows a qualitative difference in models.
+
+%when checking bw selection for lr=1e-6, we see that best gumbel temp and softmin_bw are 1. we dont have an upper bound yet on what seems a reasonable em_bw, so we check with additional experiments
+%these experiments show that bw=1 seems best.
+%What happens when we combine these different choices together?
+%(show adhoc vs new bw)
+%It seems it actually performs worse on generalization.
+%Let's take the combination which performed best?
+%combination of those performed best on miniTrue doesnt perform good on miniFalse 
+combination of those performed best on miniTrue doesnt perform good on miniTrue 
+%I now check miniFalse for all bw=1 (already checked) and all argmax for different bw. if this goes ok i enter this to miniTrue
+% argmax on miniTrue is best on miniFalse
+%Lets use the argmax then. that is when softmin_bw = 1, and the rest is the same
+Now lets give it a total run with nmi loss as well
 \subsection{Implementation Details}
 \subsection{Results}
 \subsection{General Details}
