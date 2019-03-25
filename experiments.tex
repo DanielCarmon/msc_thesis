@@ -1,7 +1,6 @@
 \chapter{Experiments}
 \label{experiments}
 
-
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{imgs/gd_clust_good_attempt.png}
@@ -62,24 +61,50 @@ For the Online Products dataset,...
 at first we checked which lr's are ok for the training to converge. this led us to 1e-5,1e-6.
 % data for next paragraph in dir first_try
 then we checked which bandwith params to use. at first we did this with lr=1e-5. this showed overfitting.
+
 later we tried with lr=1e-6, which did not result in overfitting. this is interesting- shows a qualitative difference in models.
 
-when checking bw selection for lr=1e-6, we see that best gumbel temp and softmin_bw are 1. we dont have an upper bound yet on what seems a reasonable em_bw, so we check with additional experiments
-these experiments show that bw=1 seems best.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{imgs/em_bw.png}
+\caption{\label{fig:gd_clust_good} Model selection for which EM bandwidth to use.}
+\end{figure}
+Seems we didn't reach the best yet, so let's take even higher bandwidths:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{imgs/em_bw_second_try.png}
+\caption{\label{fig:gd_clust_good} Model selection for which EM bandwidth to use.}
+\end{figure}
+
+Best is bw=1.
+Let's check now for temperature in the Gumbel sampling phase, and for the soft-min operation's bandwidth.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{imgs/gumbel_temp.png}
+\caption{\label{fig:gd_clust_good} Model selection for which temperature to use at Gumbel sampling phase.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{imgs/softmin_bw.png}
+\caption{\label{fig:gd_clust_good} Model selection for which bandwidth to use at soft-min step.}
+\end{figure}
+
+when checking bw selection for lr=1e-6 we see that best gumbel temp and softmin_bw are 1.
+
 What happens when we combine these different choices together?
-(show adhoc vs new bw)
-%It seems it actually performs worse on generalization.
-%Let's take the combination which performed best?
-%combination of those performed best on miniTrue doesnt perform good on miniFalse 
-combination of those performed best on miniTrue doesnt perform good on miniTrue 
 
-%Lets use the argmax then. that is when softmin_bw = 1, and the rest is the same
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{imgs/combined_argmax_bad.png}
+\caption{\label{fig:gd_clust_good} Combination of different model choices yields bad design.}
+\end{figure}
+
+Lets use the argmax then. that is when softmin_bw = 1, and the rest is the same
 Now lets give it a total run with nmi loss as well
-\begin{comment}
-%I now check miniFalse for all bw=1 (already checked) and all argmax for different bw. if this goes ok i enter this to miniTrue
-% argmax on miniTrue is best on miniFalse
 
-\end{comment}
 
 \subsection{Implementation Details}
 \subsection{Results}
